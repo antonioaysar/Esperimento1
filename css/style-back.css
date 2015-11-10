@@ -1,0 +1,184 @@
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) 
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} */
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* Personal Stuff
+-------------------------------------------------------------------------------*/
+/*
+.wrapper{
+background-color: #B3B9C4;
+width:100%;
+margin:0 auto;
+overflow:hidden;
+height:100%;
+}*/
+
+body {
+    font-family: helvetica, Arial, sans-serif;
+    font-size:13px;
+    background-color: #B3B9C4;
+    width:100%;
+}
+
+
+#TopBar{
+  height: 125px;
+  width:100%;
+  background-color: #6E8AB8;
+  margin: 0px auto;
+  padding: 0px auto;
+  position:fixed;
+  left:0px;
+  top:0px;
+  border-bottom: 0.6em solid rgb(94, 118, 158);
+}
+
+
+
+nav{
+  float:right;
+  display: inline;
+  margin: 2em 2em 0px 0px;
+}
+.nav-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav-menu {
+  border-bottom: 4px solid #fff;
+  display:block;
+  /*margin: 2em;*/
+}
+.nav-menu li{
+  display:inline-block;
+  padding: 0.2em;
+}
+
+.nav-menu li:first-child{
+}
+.nav-menu li:hover{
+}
+.nav-menu li a{
+  color: #fff;
+  font-weight:bold;
+  text-decoration:none;
+  font-size:2em;
+}
+
+.nav-menu li:hover a{
+  color: #C8E4F9;
+}
+
+#Bottone1{
+  display:none;
+}
+
+
+/*			MENUBUTTON			*/
+#menuButton{
+	font-size:2em;
+	color:#fff;
+	margin:0px 10px;
+}
+#menuButton a{
+	cursor:pointer;
+	transition:all 0.2s;
+}
+#menuButton a:hover{
+	color:#f06;
+	
+}
+/*			CLOSEBUTTON		*/
+
+
+.closeButton{
+	font-size:1.5em;
+	color:#fff;
+	position:absolute;
+	left:160px;
+	top:10px;
+	
+}
+.closeButton a:hover{
+	color:#333;
+	cursor:pointer;
+	
+}
+
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media only screen and (max-width : 480px) {
+  nav{
+    display: block;
+    margin:0px 0px;
+    padding:0px;
+    width:100%;
+  }
+  nav ul{
+      display: block;
+      background-color: #283744;
+  }
+  nav li {
+      display: block;
+      float: none;
+      width: 100%;
+  }
+  nav li a {
+      border-bottom: 1px solid #576979;
+  }
+  nav ul {
+      display: none;
+      height: auto;
+  }
+  
+  nav ul li{
+  display:inline-block;
+  padding: 0;
+  }
+  nav a#pull {
+      display: block;
+      background-color: #283744;
+      width: 100%;
+      height:4em;
+      position: relative;
+      border-radius: 0.4em;
+      -webkit-border-radius: 0.4em;
+      -moz-border-radius: 0.4em;
+      border: 0.2em solid #C8E4F9;
+  }
+  nav a#pull:after {
+      content:"";
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+  }
+}

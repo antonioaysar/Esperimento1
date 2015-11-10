@@ -1,0 +1,508 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../font/ubuntu.ttf") format("truetype");
+}
+/*@import "compass/reset";*/
+/*Colori Usati:
+ Blu:
+  TopBar: #6E8AB8
+  Bordo TopBar: #5E769E
+ Blu-Chiaro:
+  Colore sfondo main: #CED0E9
+ Celeste:
+ Evidenziatore Celeste: #C8E4F9
+ Grigio:
+  Colore body: #B3B9C4
+ 
+ */
+/* Costanti */
+/*------------------- Classi Fittizie --------------------------*/
+/* line 43, ../sass/style.scss */
+.ButtonFB, .ButtonTW, .ButtonG {
+  width: 200px;
+  height: 65px;
+  display: inline-block;
+  text-align: center;
+  line-height: 2.2;
+  font-size: 26px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin: 10px 20px;
+}
+/* line 53, ../sass/style.scss */
+.ButtonFB a, .ButtonTW a, .ButtonG a {
+  color: #DCDCDC;
+  text-shadow: 5px 5px 11px rgba(0, 0, 0, 0.5);
+}
+/* line 56, ../sass/style.scss */
+.ButtonFB a:hover, .ButtonTW a:hover, .ButtonG a:hover {
+  color: white;
+}
+@media only screen and (max-width: 800px) {
+  /* line 43, ../sass/style.scss */
+  .ButtonFB, .ButtonTW, .ButtonG {
+    width: 60%;
+    margin: 1em 20%;
+  }
+}
+
+/* line 75, ../sass/style.scss */
+html {
+  width: 100%;
+}
+
+/* line 78, ../sass/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 81, ../sass/style.scss */
+.container {
+  font-family: 'ubuntu', Arial, sans-serif;
+  font-size: 13px;
+  background-color: #B3B9C4;
+  width: 100%;
+}
+
+/* line 88, ../sass/style.scss */
+#SpaceTop {
+  height: 120px;
+}
+@media only screen and (max-width: 800px) {
+  /* line 88, ../sass/style.scss */
+  #SpaceTop {
+    height: 80px;
+  }
+}
+
+/* line 96, ../sass/style.scss */
+#TopBar {
+  height: 110px;
+  width: 100%;
+  background-color: #6E8AB8;
+  margin: 0px auto;
+  padding: 0px auto;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  border-bottom: 0.6em solid #5e769e;
+  box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.5);
+}
+/* line 107, ../sass/style.scss */
+#TopBar h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  display: block;
+  margin: 30px 0px 0px 30px;
+  text-shadow: 5px 5px 11px rgba(0, 0, 0, 0.5);
+}
+/* line 114, ../sass/style.scss */
+#TopBar h2 {
+  font-size: 1.5em;
+  font-style: italic;
+  display: block;
+  margin-left: 20px;
+}
+@media only screen and (max-width: 800px) {
+  /* line 96, ../sass/style.scss */
+  #TopBar {
+    height: 70px;
+  }
+}
+
+/* line 125, ../sass/style.scss */
+.Titolo1 {
+  display: block;
+  width: 50%;
+  font-family: 'ubuntu';
+  color: #fff;
+}
+@media only screen and (max-width: 800px) {
+  /* line 125, ../sass/style.scss */
+  .Titolo1 {
+    display: none;
+  }
+}
+
+/* line 135, ../sass/style.scss */
+.link_menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 141, ../sass/style.scss */
+.link_menu {
+  text-align: right;
+  /*margin: 2em;*/
+  border-bottom: 4px solid #fff;
+  float: right;
+  width: auto;
+  position: relative;
+  top: -90px;
+  margin: 25px 20px 0px 0px;
+}
+/* line 150, ../sass/style.scss */
+.link_menu li {
+  display: inline-block;
+  padding: 0.2em;
+}
+/* line 154, ../sass/style.scss */
+.link_menu li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2em;
+}
+/* line 160, ../sass/style.scss */
+.link_menu li:hover a {
+  color: #C8E4F9;
+}
+@media only screen and (max-width: 800px) {
+  /* line 141, ../sass/style.scss */
+  .link_menu {
+    display: none;
+    background-color: #6E8AB8;
+    width: 100%;
+    text-align: center;
+    border: none;
+    margin: 0px;
+    position: unset;
+  }
+  /* line 172, ../sass/style.scss */
+  .link_menu li {
+    display: block;
+  }
+  /* line 174, ../sass/style.scss */
+  .link_menu li a {
+    display: block;
+  }
+}
+
+/* line 181, ../sass/style.scss */
+#nav_menu {
+  float: right;
+  display: inline;
+  width: 50%;
+}
+@media only screen and (max-width: 800px) {
+  /* line 181, ../sass/style.scss */
+  #nav_menu {
+    display: block;
+    margin: 0px 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  /* line 190, ../sass/style.scss */
+  #nav_menu ul {
+    display: none;
+  }
+  /* line 192, ../sass/style.scss */
+  #nav_menu ul li {
+    display: none;
+  }
+}
+
+/* line 199, ../sass/style.scss */
+#pull {
+  display: none;
+}
+
+/*-------------------- MAIN AREA-------------------------------------------*/
+/* line 205, ../sass/style.scss */
+#MainPage, .MainContact, #MainPage_About {
+  width: 70%;
+  display: block;
+  background: #CED0E9;
+  font-size: 1em;
+  /*border: 4px solid #fff;*/
+  border: 4px solid #abaed9;
+  padding: 10px;
+  min-height: 500px;
+  margin: 0px 2% 20px 3%;
+  box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.3);
+}
+/* line 216, ../sass/style.scss */
+#MainPage h1, .MainContact h1, #MainPage_About h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+@media only screen and (max-width: 800px) {
+  /* line 205, ../sass/style.scss */
+  #MainPage, .MainContact, #MainPage_About {
+    width: 90%;
+    margin: 0px 5%;
+  }
+}
+
+/* line 226, ../sass/style.scss */
+.Articolo {
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid #abaed9;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 1.5em;
+  padding: 0.5em;
+}
+/* line 234, ../sass/style.scss */
+.Articolo h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* line 238, ../sass/style.scss */
+.Articolo h2 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+/* line 242, ../sass/style.scss */
+.Articolo p {
+  font-size: 1em;
+  line-height: 1.1em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/*----------------Contatti!!!!-------------------*/
+/* line 251, ../sass/style.scss */
+.MainContact {
+  width: 90%;
+  margin: 0px 5%;
+}
+
+/* line 258, ../sass/style.scss */
+#Mappa {
+  width: 98%;
+  margin: 1em 1%;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 265, ../sass/style.scss */
+.Recapiti {
+  text-align: center;
+}
+
+/* line 269, ../sass/style.scss */
+.Map_Position {
+  width: auto;
+  display: inline-block;
+}
+
+/* line 274, ../sass/style.scss */
+.GogMap {
+  width: 700px;
+  height: 450px;
+  clear: both;
+}
+@media only screen and (max-width: 800px) {
+  /* line 274, ../sass/style.scss */
+  .GogMap {
+    margin: 0px;
+    display: block;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* line 286, ../sass/style.scss */
+.SocialCont {
+  width: auto;
+  display: block;
+  margin: 30px 20px;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  /* line 286, ../sass/style.scss */
+  .SocialCont {
+    margin: 30px 0px;
+    display: inline;
+  }
+}
+
+/* line 297, ../sass/style.scss */
+.ButtonFB {
+  background-color: #3A5795;
+  border: 4px solid #2c4270;
+  /*margin-left:0px;*/
+}
+/* line 69, ../sass/style.scss */
+.ButtonFB:hover {
+  background-color: #4a6db8;
+  border-color: #4a6db8;
+}
+
+/* line 303, ../sass/style.scss */
+.ButtonTW {
+  background-color: #55ACEE;
+  border: 4px solid #2795e9;
+}
+/* line 69, ../sass/style.scss */
+.ButtonTW:hover {
+  background-color: #83c3f3;
+  border-color: #83c3f3;
+}
+
+/* line 308, ../sass/style.scss */
+.ButtonG {
+  background-color: #EA4335;
+  border: 4px solid #d62516;
+}
+/* line 69, ../sass/style.scss */
+.ButtonG:hover {
+  background-color: #ef6e63;
+  border-color: #ef6e63;
+}
+
+/*---------------------------About US---------------------------------*/
+/* line 317, ../sass/style.scss */
+#MainPage_About h2 {
+  font-size: 1.5em;
+}
+
+/* line 322, ../sass/style.scss */
+.Autore {
+  text-align: center;
+  border-top: 4px solid #abaed9;
+  box-shadow: -3px -2px 2px rgba(0, 0, 0, 0.5);
+  margin: 1em;
+  padding: 1em;
+}
+/* line 328, ../sass/style.scss */
+.Autore p {
+  text-align: left;
+}
+
+/* ------------------------------ RIGHT AREA ------------------- */
+/* line 334, ../sass/style.scss */
+#RightBar {
+  display: block;
+  float: right;
+  width: 25%;
+  min-height: 500px;
+  background: #CED0E9;
+  padding: 0.5em;
+  border-bottom: 4px solid #abaed9;
+  border-left: 4px solid #abaed9;
+  border-top: 4px solid #abaed9;
+}
+@media only screen and (max-width: 800px) {
+  /* line 334, ../sass/style.scss */
+  #RightBar {
+    display: none;
+  }
+}
+
+/* line 352, ../sass/style.scss */
+.SocialSide {
+  width: auto;
+  display: block;
+  margin: 0px 0px;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  /* line 352, ../sass/style.scss */
+  .SocialSide {
+    margin: 30px 0px;
+    display: inline;
+  }
+}
+
+/* line 363, ../sass/style.scss */
+.ButtonFB_Round, .ButtonTW_Round, .ButtonG_Round {
+  width: 54px;
+  height: 54px;
+  background-size: cover;
+  display: inline-block;
+  margin: 1em 0.5em;
+}
+/* line 369, ../sass/style.scss */
+.ButtonFB_Round a, .ButtonTW_Round a, .ButtonG_Round a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* line 376, ../sass/style.scss */
+.ButtonFB_Round {
+  background-image: url("../imgs/icons/Facebook.png");
+}
+
+/* line 381, ../sass/style.scss */
+.ButtonTW_Round {
+  background-image: url("../imgs/icons/Twitter.png");
+}
+
+/* line 386, ../sass/style.scss */
+.ButtonG_Round {
+  background-image: url("../imgs/icons/Google.png");
+}
+
+/*----------- BOTTOM AREA -----------------*/
+/* line 393, ../sass/style.scss */
+#LastArea {
+  width: 100%;
+  display: block;
+  background-color: #3f5881;
+  min-height: 100px;
+  color: #fff;
+  border-top: 6px solid #32415b;
+  height: auto;
+  margin-top: 1em;
+}
+
+/* line 403, ../sass/style.scss */
+.id-foot {
+  margin: 1em 1em 2em 1em;
+  font-size: 1em;
+}
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+  /* line 413, ../sass/style.scss */
+  .Titolo {
+    display: none;
+  }
+
+  /* line 416, ../sass/style.scss */
+  #pull {
+    display: inline-block;
+    background-color: #6E8AB8;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    /*    border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;*/
+    border-top: 4px solid #5E769E;
+    font-family: 'ubuntu';
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5;
+    padding-top: 0px;
+    text-shadow: 5px 5px 11px rgba(0, 0, 0, 0.5);
+  }
+  /* line 434, ../sass/style.scss */
+  #pull:hover {
+    color: #C8E4F9;
+  }
+
+  /* line 438, ../sass/style.scss */
+  #pull:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
